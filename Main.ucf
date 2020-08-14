@@ -1,0 +1,38 @@
+NET "clk" LOC = "B8"; # Bank = 0, Signal name = MCLK reloj interno
+NET "start" LOC = "A7";
+NET "pause" LOC = "M4";
+NET "switch" LOC = "N3";
+
+NET "row[0]" LOC = "B2"| PULLUP ;  # JA terminal 1, está arriba de SW7Conector JA 
+NET "row[1]" LOC = "A3"| PULLUP ;  # JA terminal 2
+NET "row[2]" LOC = "J3"| PULLUP ;  # JA terminal 3
+NET "row[3]" LOC = "B5"| PULLUP ;  # JA terminal 4, está junto a la terminal JA-5, la de tierra 
+ 
+NET "column[0]" LOC = "C6";# | DRIVE = 2 | PULLUP ;  # JB  1, está arriba de SW4
+NET "column[1]" LOC = "B6";# | DRIVE = 2 | PULLUP ;  #•JB  2
+NET "column[2]" LOC = "C5";# | DRIVE = 2 | PULLUP ;  # JB  3
+NET "column[3]" LOC = "B7";# | DRIVE = 2 | PULLUP ;  # JB  4, está junto a la terminal JB-5, la de tierra#   
+
+NET "display[0]" LOC ="L14";
+NET "display[1]" LOC ="H12";
+NET "display[2]" LOC ="N14";
+NET "display[3]" LOC ="N11";
+NET "display[4]" LOC ="P12";
+NET "display[5]" LOC ="L13";
+NET "display[6]" LOC ="M12";
+NET "point" LOC ="N13";
+
+NET "mux[0]" LOC = "F12";
+NET "mux[1]" LOC = "J12";
+NET "mux[2]" LOC = "M13";
+NET "mux[3]" LOC = "K14";
+
+//NET "led" LOC = "M5";
+NET "leds[0]" LOC ="M5";	 # L0, el de la derecha
+NET "leds[1]" LOC ="M11"; 	 # L1
+NET "leds[2]" LOC ="P7";	 # L2
+NET "leds[3]" LOC ="P6";	 # L3
+NET "leds[4]" LOC ="N5";	 # L4
+NET "leds[5]" LOC ="N4";	 # L5
+NET "leds[6]" LOC ="P4";	 # L6
+NET "leds[7]" LOC ="G1"; 	 # L7, el de la izquierda
